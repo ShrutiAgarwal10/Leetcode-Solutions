@@ -15,4 +15,17 @@ class LongestCommonPrefix_K {
         }
         return prefix;
     }
+
+    //0ms
+    fun longestCommonPrefix2(strs: Array<String>): String {
+        var endIndex = strs[0].length
+        for (i in 1 until strs.size){
+            while(strs[i].length < endIndex ||
+                strs[0].substring(0,endIndex) != strs[i].substring(0,endIndex)
+            ){
+                endIndex -= 1
+            }
+        }
+        return strs[0].substring(0,endIndex)
+    }
 }
