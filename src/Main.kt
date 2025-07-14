@@ -1,6 +1,7 @@
 import LC13_RomanToInteger.RomanToInteger_K
 import LC14_LongestCommonPrefix.LongestCommonPrefix_K
 import LC1_TwoSum.TwoSumK
+import LC3_LongestSubstring.LongestSubstring_K
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -17,6 +18,8 @@ fun main() {
     println(obj.longestCommonPrefix(arrayOf<String>(" ", "abcd", "abcd")))
     println(obj.longestCommonPrefix(arrayOf<String>(" ", "")))
     println(obj.longestCommonPrefix(arrayOf<String>(" ab", " abc")))
+    LongestSubstring_K().output()
+
 
 }
 
